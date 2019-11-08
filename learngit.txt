@@ -1,0 +1,27 @@
+QUICK START
+===========
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:thomas-vu/test.git
+git push -u origin master
+
+BASICS
+======
+git init                                           (create a new repository)
+git clone /path/to/repository                      (checkout a repository)
+git clone username@host:/path/to/repository        (clone remote SSH)
+git clone https://github.com/thomas-vu/test.git    (clone remote HTTPS)
+git add <filename>                                 (propose changes / add it to the Index)
+git add .                                          (add everything)
+git commit -m 'Commit message.'                    (actually commit these changes)
+git remote add origin <server>                     (connect repository to a remote server)
+git push origin master                             (send commits to your remote repository)
+
+BRANCHES
+========
+git checkout -b feature_x    (create a new branch named "feature_x" and switch to it)
+git push origin <branch>     (a branch is not available to others unless you push the branch to your remote repository)
+git checkout master          (switch back to master)
+git branch -d feature_x      (delete a branch)
