@@ -1,0 +1,90 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+ 
+\title{First document}
+\author{Hubert Farnsworth \thanks{funded by the Overleaf team}}
+\date{February 2017}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+This is a simple paragraph at the beginning of the 
+document. A brief introduction about the main subject.
+\end{abstract}
+
+Now that we have written our abstract, we can begin writing our first paragraph.
+ 
+This line will start a second Paragraph.
+
+\section{Introduction}
+ 
+This is the first section.
+ 
+Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
+elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
+neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+Donec ullamcorper, felis non sodales...
+ 
+\section{Second Section}
+ 
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+sollicitudin.  Praesent imperdiet mi necante...
+ 
+\subsection{First Subsection}
+Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
+ 
+\addcontentsline{toc}{section}{Unnumbered Section}
+\section*{Unnumbered Section}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem
+
+We have now added a title, author and date to our first \LaTeX{} document!
+%This line here is a comment. It will not be printed in the document.
+
+Some of the \textbf{greatest}
+discoveries in \underline{science} 
+were made by \textbf{\textit{accident}}.
+
+\begin{itemize}
+  \item The individual entries are indicated with a black dot, a so-called bullet.
+  \item The text in the entries may be of any length.
+\end{itemize}
+
+\begin{enumerate}
+  \item This is the first entry in our list
+  \item The list numbers increase with each entry we add
+\end{enumerate}
+
+In physics, the mass-energy equivalence is described by the famous equation
+ 
+\[ E=mc^2 \]
+ 
+discovered in 1905 by Albert Einstein. 
+In natural units ($c = 1$), the formula expresses the identity
+ 
+\begin{equation}
+E=m
+\end{equation}
+
+Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$.
+These can be combined an nested to write expressions such as
+ 
+\[ T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]
+\[ T_{j_1 j_2 \dots j_q}^{i_1 i_2 \dots i_p} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]
+ 
+We write integrals using $\int$ and fractions using $\frac{a}{b}$.
+Limits are placed on integrals using superscripts and subscripts:
+ 
+\[ \int_0^1 \frac{1}{e^x} =  \frac{e-1}{e} \]
+\[ \int^1_0 \frac{1}{e^x} =  \frac{e-1}{e} \]
+ 
+Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek
+letters are written as $\Omega$ $\Delta$.
+ 
+Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
+
+\end{document}
