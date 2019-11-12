@@ -1,4 +1,5 @@
 \documentclass[12pt, letterpaper, twoside]{article}
+\usepackage{amssymb}
 \usepackage[utf8]{inputenc}
  
 \title{forall x notes}
@@ -12,19 +13,129 @@
 \tableofcontents
 \newpage
 
-\section{Introduction}
+\section{Chapter 1 Practice Exercises}
  
-This is the first section.
+\textbf{Part A} Which of the following are 'sentences' in
+the logical sense?
  
-Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
-elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
-neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
-Donec ullamcorper, felis non sodales...
- 
-\section{Second Section}
- 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
-Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
-sollicitudin.  Praesent imperdiet mi necante...
+\begin{enumerate}
+    \item \textbf{England is smaller than China.}
+    \item \textbf{Greenland is south of Jerusalem.}
+    \item Is New Jersey east of Wisconsin?
+    \item \textbf{The atomic number of helium is 2.}
+    \item \textbf{The atomic number of helium is $\pi$.}
+    \item \textbf{I hate overcooked noodles.}
+    \item Blech! Overcooked noodles!
+    \item \textbf{Overcooked noodles are disgusting.}
+    \item Take your time.
+    \item \textbf{This is the last question.}
+\end{enumerate}
+
+\noindent \textbf{Part B} For each of the following: Is it a
+tautology, a contradiction, or a contingent sentence?
+
+\begin{enumerate}
+    \item Caesar crossed the Rubicon. \textbf{(Contingent)}
+    \item Someone once crossed the Rubicon. \textbf{(Contingent)}
+    \item No one has ever crossed the Rubicon. \textbf{(Contingent)}
+    \item If Caesar crossed the Rubicon, then someone
+      has. \textbf{(Tautology)}
+    \item Even though Caesar crossed the Rubicon, no one
+      ever crossed the Rubicon. \textbf{(Contradiction)}
+    \item If anyone has ever crossed the Rubicon, it was
+      Caesar. \textbf{(Contingent)}
+\end{enumerate}
+
+\noindent \textbf{Part C} Look back at the sentences G1-G4
+on p.11, and consider each of the following sets of
+sentences. Which are consistent? Which are inconsistent?
+
+\begin{enumerate}
+    \item G2, G3, and G4 \textbf{(Consistent)}
+    \item G1, G3, and G4 \textbf{(Inconsistent)}
+    \item G1, G2, and G4 \textbf{(Consistent)}
+    \item G1, G2, and G3 \textbf{(Consistent)}
+\end{enumerate}
+
+\noindent \textbf{Part D} Which of the following is
+possible? If it is possible, give an example. If it is not
+possible, explain why.
+
+\begin{enumerate}
+    \item A valid argument that has one false premise and
+      one true premise
+
+    This is possible. For example:
+    \begin{itemize}
+        \item[] All men are carrots.
+        \item[] Socrates is a man.
+        \item[$\therefore$] Socrates is a carrot.
+    \end{itemize}
+
+    \item A valid argument that has a false conclusion
+
+    This is possible. The previous example for instance.
+
+    \item A valid argument, the conclusion of which is a
+      contradiction
+
+    This is possible. For example:
+    \begin{itemize}
+        \item[] All men are carrots.
+        \item[$\therefore$] It is both raining and not raining.
+    \end{itemize}
+
+    \item An invalid argument, the conclusion of which is a
+      tautology
+
+    This is not possible. All invalid arguments have true
+    premises and a false conclusion; this means the
+    conclusion cannot be tautology (which is always true).
+
+    \item A tautology that is contingent
+
+    This is not possible since the definition of a
+    contingent sentence requires that it not be a tautology.
+
+    \item Two logically equivalent sentences, both of which
+      are tautologies
+
+    This is possible. In fact, any two tautologies will
+    always be logically equivalent as they are always true.
+
+    \item Two logically equivalent sentences, one of which
+      is a tautology and one of which is contingent
+
+    This is not possible. Logical equivalence means that the
+    sentences necessarily have the same truth-value. Since a
+    contingent sentence may be false, it does not
+    necessarily have the same truth value as a tautological
+    sentence which is always true.
+
+    \item Two logically equivalent sentences that together
+      are an inconsistent set
+
+    This is possible. Consider two sentences which are both
+    contradictions. They must be logically equivalent since
+    contradictions are always false; this also means it is
+    not logically possible for the set containing these two
+    sentences to be true at the same time.
+
+    \item A consistent set of sentences that contains a
+      contradiction
+
+    This is not possible. Since this set contains a sentence
+    which is always false, it is not logically possible for
+    all the members of the set to be true at the same time.
+
+    \item An inconsistent set of sentences that contains a
+      tautology
+
+    This is possible. Any inconsistent set of sentences will
+    remain inconsistent if you add a tautology to it.
+
+\end{enumerate}
+
+\section{Chapter 2 Practice Exercises}
  
 \end{document}

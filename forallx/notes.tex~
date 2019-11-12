@@ -1,0 +1,57 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+ 
+\title{forall x notes}
+\author{Thomas Vu}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Chapter 1 Practice Exercises}
+ 
+\textbf{Part A} Which of the following are 'sentences' in
+the logical sense?
+ 
+\begin{enumerate}
+    \item \textbf{England is smaller than China.}
+    \item \textbf{Greenland is south of Jerusalem.}
+    \item Is New Jersey east of Wisconsin?
+    \item \textbf{The atomic number of helium is 2.}
+    \item \textbf{The atomic number of helium is $\pi$.}
+    \item \textbf{I hate overcooked noodles.}
+    \item Blech! Overcooked noodles!
+    \item \textbf{Overcooked noodles are disgusting.}
+    \item Take your time.
+    \item \textbf{This is the last question.}
+\end{enumerate}
+
+\noindent \textbf{Part B} For each of the following: Is
+it a tautology, a contradiction, or a contingent
+sentence?
+
+\begin{enumerate}
+    \item Caesar crossed the
+      Rubicon. \textbf{(Contingent)}
+    \item Someone once crossed the
+      Rubicon. \textbf{(Contingent)}
+    \item No one has ever crossed the
+      Rubicon. \textbf{(Contingent)}
+    \item If Caesar crossed the Rubicon, then someone
+      has. \textbf{(Tautology)}
+    \item Even though Caesar crossed the Rubicon, no
+      one has ever crossed the
+      Rubicon. \textbf{(Contradiction)}
+    \item If anyone has ever crossed the Rubicon, it
+      was Caesar. \textbf{(Contingent)}
+\end{enumerate}
+
+\noindent \textbf{Part C} Look back at the sentences G1-G4 on
+p.11, and consider each of the following sets of
+sentences. Which are consistent? Which are inconsistent?
+ 
+\end{document}
