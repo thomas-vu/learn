@@ -1,4 +1,5 @@
 \documentclass[12pt, letterpaper, twoside]{article}
+\usepackage{amssymb}
 \usepackage[utf8]{inputenc}
  
 \title{forall x notes}
@@ -14,7 +15,7 @@
 
 \section{Chapter 1 Practice Exercises}
  
-\textbf{Part A} Which of the following are 'sentences' in
+\textbf{Part A} Which of the following are `sentences' in
 the logical sense?
  
 \begin{enumerate}
@@ -30,28 +31,325 @@ the logical sense?
     \item \textbf{This is the last question.}
 \end{enumerate}
 
-\noindent \textbf{Part B} For each of the following: Is
-it a tautology, a contradiction, or a contingent
-sentence?
+\noindent \textbf{Part B} For each of the following: Is it a
+tautology, a contradiction, or a contingent sentence?
 
 \begin{enumerate}
-    \item Caesar crossed the
-      Rubicon. \textbf{(Contingent)}
-    \item Someone once crossed the
-      Rubicon. \textbf{(Contingent)}
-    \item No one has ever crossed the
-      Rubicon. \textbf{(Contingent)}
+    \item Caesar crossed the Rubicon. \textbf{(Contingent)}
+    \item Someone once crossed the Rubicon. \textbf{(Contingent)}
+    \item No one has ever crossed the Rubicon. \textbf{(Contingent)}
     \item If Caesar crossed the Rubicon, then someone
       has. \textbf{(Tautology)}
-    \item Even though Caesar crossed the Rubicon, no
-      one has ever crossed the
-      Rubicon. \textbf{(Contradiction)}
-    \item If anyone has ever crossed the Rubicon, it
-      was Caesar. \textbf{(Contingent)}
+    \item Even though Caesar crossed the Rubicon, no one
+      ever crossed the Rubicon. \textbf{(Contradiction)}
+    \item If anyone has ever crossed the Rubicon, it was
+      Caesar. \textbf{(Contingent)}
 \end{enumerate}
 
-\noindent \textbf{Part C} Look back at the sentences G1-G4 on
-p.11, and consider each of the following sets of
+\noindent \textbf{Part C} Look back at the sentences G1-G4
+on p.11, and consider each of the following sets of
 sentences. Which are consistent? Which are inconsistent?
+
+\begin{enumerate}
+    \item G2, G3, and G4 \textbf{(Consistent)}
+    \item G1, G3, and G4 \textbf{(Inconsistent)}
+    \item G1, G2, and G4 \textbf{(Consistent)}
+    \item G1, G2, and G3 \textbf{(Consistent)}
+\end{enumerate}
+
+\noindent \textbf{Part D} Which of the following is
+possible? If it is possible, give an example. If it is not
+possible, explain why.
+
+\begin{enumerate}
+    \item A valid argument that has one false premise and
+      one true premise
+
+    This is possible. For example:
+    \begin{itemize}
+        \item[] All men are carrots.
+        \item[] Socrates is a man.
+        \item[$\therefore$] Socrates is a carrot.
+    \end{itemize}
+
+    \item A valid argument that has a false conclusion
+
+    This is possible. The previous example for instance.
+
+    \item A valid argument, the conclusion of which is a
+      contradiction
+
+    This is possible. For example:
+    \begin{itemize}
+        \item[] All men are carrots.
+        \item[$\therefore$] It is both raining and not raining.
+    \end{itemize}
+
+    \item An invalid argument, the conclusion of which is a
+      tautology
+
+    This is not possible. All invalid arguments have true
+    premises and a false conclusion; this means the
+    conclusion cannot be tautology (which is always true).
+
+    \item A tautology that is contingent
+
+    This is not possible since the definition of a
+    contingent sentence requires that it not be a tautology.
+
+    \item Two logically equivalent sentences, both of which
+      are tautologies
+
+    This is possible. In fact, any two tautologies will
+    always be logically equivalent as they are always true.
+
+    \item Two logically equivalent sentences, one of which
+      is a tautology and one of which is contingent
+
+    This is not possible. Logical equivalence means that the
+    sentences necessarily have the same truth-value. Since a
+    contingent sentence may be false, it does not
+    necessarily have the same truth value as a tautological
+    sentence which is always true.
+
+    \item Two logically equivalent sentences that together
+      are an inconsistent set
+
+    This is possible. Consider two sentences which are both
+    contradictions. They must be logically equivalent since
+    contradictions are always false; this also means it is
+    not logically possible for the set containing these two
+    sentences to be true at the same time.
+
+    \item A consistent set of sentences that contains a
+      contradiction
+
+    This is not possible. Since this set contains a sentence
+    which is always false, it is not logically possible for
+    all the members of the set to be true at the same time.
+
+    \item An inconsistent set of sentences that contains a
+      tautology
+
+    This is possible. Any inconsistent set of sentences will
+    remain inconsistent if you add a tautology to it.
+
+\end{enumerate}
+
+\section{Chapter 2 Practice Exercises}
  
+\textbf{Part A} Using the symbolization key given, translate each English-language sentence into SL.
+
+\begin{enumerate}
+	\item[\textbf{M:}] Those creatures are men in suits. 
+	\item[\textbf{C:}] Those creatures are chimpanzees. 
+	\item[\textbf{G:}] Those creatures are gorillas.
+
+	\item Those creatures are not men in suits.
+
+	$\neg M$
+
+	\item Those creatures are men in suits, or they are not.
+
+	$M \vee \neg M$
+
+	\item Those creatures are either gorillas or chimpanzees.
+
+	$G \vee C$
+
+	\item Those creatures are neither gorillas nor chimpanzees.
+
+	$\neg (G \vee C)$
+
+	\item If those creatures are chimpanzees, then they are
+	  neither gorillas nor men in suits.
+
+	$C \rightarrow \neg (G \vee M)$
+
+	\item Unless those creatures are men in suits, they are
+	  either chimpanzees or they are gorillas.
+
+	$M \vee (C \vee G)$
+\end{enumerate}
+
+\noindent \textbf{Part B} Using the symbolization key given, translate each English-language sentence into SL.
+
+\begin{enumerate}
+	\item[\textbf{A:}] Mister Ace was murdered.
+	\item[\textbf{B:}] The butler did it.
+	\item[\textbf{C:}] The cook did it.
+	\item[\textbf{D:}] The Duchess is lying.
+	\item[\textbf{E:}] Mister Edge was murdered.
+	\item[\textbf{F:}] The murder weapon was a frying pan.
+	
+	\item Either Mister Ace or Mister Edge was murdered.
+
+	$A \vee E$
+
+	\item If Mister Ace was murdered, then the cook did it.
+
+	$A \rightarrow C$
+
+	\item If Mister Edge was murdered, then the cook did not do it.
+
+	$E \rightarrow \neg C$
+
+	\item Either the butler did it, or the Duchess is lying.
+
+	$B \vee D$
+
+	\item The cook did it only if the Duchess is lying.
+
+	$C \rightarrow D$
+
+	\item If the murder weapon was a frying pan, then the culprit must have been the cook.
+
+	$F \rightarrow C$
+
+	\item If the murder weapon was not a frying pan, then the culprit was either the cook or the butler.
+
+	$\neg F \rightarrow (C \vee B)$
+
+	\item Mister Ace was murdered if and only if Mister Edge was not murdered.
+
+	$A \leftrightarrow \neg E$
+
+	\item The Duchess is lying, unless it was Mister Edge who was murdered.
+
+	$D \vee E$
+
+	\item If Mister Ace was murdered, he was done in with a frying pan.
+
+	$A \rightarrow F$
+
+	\item Since the cook did it, the butler did not.
+
+	$C \wedge (C \rightarrow \neg B)$
+
+	\item Of course the Duchess is lying!
+
+	$D$
+\end{enumerate}
+
+\noindent \textbf{Part C} Using the symbolization key given, translate each English-language sentence into SL.
+
+\begin{enumerate}
+	\item[\textbf{E$_1$:}] Ava is an electrician.
+	\item[\textbf{E$_2$:}] Harrison is an electrician.
+	\item[\textbf{F$_1$:}] Ava is a firefighter.
+	\item[\textbf{F$_2$:}] Harrison is a firefighter.
+	\item[\textbf{S$_1$:}] Ava is satisfied with her career.
+	\item[\textbf{S$_2$:}] Harrison is satisfied with his career.
+	
+	\item Ava and Harrison are both electricians.
+
+	$E_1 \wedge E_2$
+
+	\item If Ava is a firefighter, then she is satisfied with her career.
+
+	$F_1 \rightarrow S_1$
+
+	\item Ava is a firefighter, unless she is an electrician.
+
+	$F_1 \vee E_1$
+
+	\item Harrison is an unsatisfied electrician.
+
+	$E_2 \wedge \neg S_2$
+
+	\item Neither Ava nor Harrison is an electrician.
+
+	$\neg (E_1 \vee E_2)$
+
+	\item Both Ava and Harrison are electricians, but neither of them find it satisfying.
+
+	$E_1 \wedge \neg S_1 \wedge E_2 \wedge \neg S_2$
+
+	\item Harrison is satisfied only if he is a firefighter.
+
+	$S_2 \rightarrow F_2$
+
+	\item If Ava is not an electrician, then neither is Harrison, but if she is, then he is too.
+
+	$E_1 \leftrightarrow E_2$
+
+	\item Ava is satisfied with her career if and only if Harrison is not satisfied with his.
+
+	$S_1 \leftrightarrow \neg S_2$
+
+	\item If Harrison is both an electrician and a firefighter, then he must be satisfied with his work.
+
+	$(E_2 \wedge F_2) \rightarrow S_2$
+
+	\item It cannot be that Harrison is both an electrician and a firefighter.
+
+	$\neg (E_2 \wedge F_2)$
+
+	\item Harrison and Ava are both firefighters if and only if neither of them is an electrician.
+
+	$(F_2 \wedge F_1) \leftrightarrow (\neg E_2 \wedge \neg E_1)$
+\end{enumerate}
+
+\noindent \textbf{Part D} Give a symbolization key and symbolize the following sentences in SL.
+
+\begin{enumerate}
+	\item[\textbf{A:}] Alice is a spy.
+	\item[\textbf{B:}] Bob is a spy.
+	\item[\textbf{C:}] The code has been broken.
+	\item[\textbf{G:}] The German embassy will be in an uproar.
+
+	\item Alice and Bob are both spies.
+
+	$A \wedge B$
+
+	\item If either Alice or Bob is a spy, then the code has been broken.
+
+	$(A \vee B) \rightarrow C$
+
+	\item If neither Alice nor Bob is a spy, then the code remains unbroken.
+
+	$\neg (A \vee B) \rightarrow \neg C$
+
+	\item The German embassy will be in an uproar, unless someone has broken the code.
+
+	$G \vee C$
+
+	\item Either the code has been broken or it has not, but the German embassy will be in an uproar regardless.
+
+	$(C \vee \neg C) \wedge G$
+
+	\item Either Alice or Bob is a spy, but not both.
+
+	$(A \vee B) \wedge \neg (A \wedge B)$
+\end{enumerate}
+
+\noindent \textbf{Part E} Give a symbolization key and symbolize the following sentences in SL.
+
+\begin{enumerate}
+	\item[\textbf{G:}] Gregor plays first base.
+	\item[\textbf{L:}] The team will lose.
+	\item[\textbf{C:}] Gregor's mom will bake cookies.
+	\item[\textbf{M:}] There is a miracle.
+
+	\item If Gregor plays first base, then the team will lose.
+
+	$G \rightarrow L$
+
+	\item The team will lose unless there is a miracle.
+
+	$L \vee M$
+
+	\item The team will either lose or it won't, but Gregor will play first base regardless.
+
+	$(L \vee \neg L) \wedge G$
+
+	\item Gregor's mom will bake cookies if and only if Gregor plays first base.
+
+	$C \leftrightarrow G$
+
+	\item If there is a miracle, then Gregor's mom will not bake cookies.
+
+	$M \rightarrow \neg C$
+\end{enumerate}
+
 \end{document}
