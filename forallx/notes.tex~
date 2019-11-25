@@ -1,10 +1,12 @@
 \documentclass[12pt, letterpaper, twoside]{article}
 \usepackage{amssymb}
 \usepackage[utf8]{inputenc}
+
+\newcommand*{\TTon}{\hspace{1.5em}\extracolsep{-1em}}
+\newcommand*{\TToff}{\extracolsep{-1em}\hspace{.3em}}
+\newcommand*{\TTbf}[1]{\textbf{\large #1}}
  
-\title{forall x notes}
-\author{Thomas Vu}
-\date{\today}
+\title{forall x notes} \author{Thomas Vu} \date{\today}
 
 \begin{document}
 
@@ -17,7 +19,6 @@
  
 \textbf{Part A} Which of the following are `sentences' in
 the logical sense?
- 
 \begin{enumerate}
     \item \textbf{England is smaller than China.}
     \item \textbf{Greenland is south of Jerusalem.}
@@ -33,11 +34,12 @@ the logical sense?
 
 \noindent \textbf{Part B} For each of the following: Is it a
 tautology, a contradiction, or a contingent sentence?
-
 \begin{enumerate}
     \item Caesar crossed the Rubicon. \textbf{(Contingent)}
-    \item Someone once crossed the Rubicon. \textbf{(Contingent)}
-    \item No one has ever crossed the Rubicon. \textbf{(Contingent)}
+    \item Someone once crossed the
+      Rubicon. \textbf{(Contingent)}
+    \item No one has ever crossed the
+      Rubicon. \textbf{(Contingent)}
     \item If Caesar crossed the Rubicon, then someone
       has. \textbf{(Tautology)}
     \item Even though Caesar crossed the Rubicon, no one
@@ -49,7 +51,6 @@ tautology, a contradiction, or a contingent sentence?
 \noindent \textbf{Part C} Look back at the sentences G1-G4
 on p.11, and consider each of the following sets of
 sentences. Which are consistent? Which are inconsistent?
-
 \begin{enumerate}
     \item G2, G3, and G4 \textbf{(Consistent)}
     \item G1, G3, and G4 \textbf{(Inconsistent)}
@@ -60,17 +61,16 @@ sentences. Which are consistent? Which are inconsistent?
 \noindent \textbf{Part D} Which of the following is
 possible? If it is possible, give an example. If it is not
 possible, explain why.
-
 \begin{enumerate}
     \item A valid argument that has one false premise and
       one true premise
 
     This is possible. For example:
-    \begin{itemize}
+    \begin{enumerate}
         \item[] All men are carrots.
         \item[] Socrates is a man.
         \item[$\therefore$] Socrates is a carrot.
-    \end{itemize}
+    \end{enumerate}
 
     \item A valid argument that has a false conclusion
 
@@ -80,10 +80,11 @@ possible, explain why.
       contradiction
 
     This is possible. For example:
-    \begin{itemize}
-        \item[] All men are carrots.
-        \item[$\therefore$] It is both raining and not raining.
-    \end{itemize}
+    \begin{enumerate}
+        \item[] It is both raining and not raining.
+        \item[$\therefore$] It is both snowing and not
+          snowing.
+    \end{enumerate}
 
     \item An invalid argument, the conclusion of which is a
       tautology
@@ -101,7 +102,7 @@ possible, explain why.
       are tautologies
 
     This is possible. In fact, any two tautologies will
-    always be logically equivalent as they are always true.
+    always be logically equivalent as they are both always true.
 
     \item Two logically equivalent sentences, one of which
       is a tautology and one of which is contingent
@@ -133,68 +134,74 @@ possible, explain why.
 
     This is possible. Any inconsistent set of sentences will
     remain inconsistent if you add a tautology to it.
-
 \end{enumerate}
 
 \section{Chapter 2 Practice Exercises}
  
-\textbf{Part A} Using the symbolization key given, translate each English-language sentence into SL.
-
+\textbf{Part A} Using the symbolization key given, translate
+each English-language sentence into SL.
 \begin{enumerate}
-	\item[\textbf{M:}] Those creatures are men in suits. 
-	\item[\textbf{C:}] Those creatures are chimpanzees. 
+	\item[\textbf{M:}] Those creatures are men in suits.
+	\item[\textbf{C:}] Those creatures are chimpanzees.
 	\item[\textbf{G:}] Those creatures are gorillas.
 
 	\item Those creatures are not men in suits.
 
 	$\neg M$
 
-	\item Those creatures are men in suits, or they are not.
+	\item Those creatures are men in suits, or they are
+          not.
 
 	$M \vee \neg M$
 
-	\item Those creatures are either gorillas or chimpanzees.
+	\item Those creatures are either gorillas or
+          chimpanzees.
 
 	$G \vee C$
 
-	\item Those creatures are neither gorillas nor chimpanzees.
+	\item Those creatures are neither gorillas nor
+          chimpanzees.
 
 	$\neg (G \vee C)$
 
-	\item If those creatures are chimpanzees, then they are
-	  neither gorillas nor men in suits.
+	\item If those creatures are chimpanzees, then they
+          are neither gorillas nor men in suits.
 
 	$C \rightarrow \neg (G \vee M)$
 
-	\item Unless those creatures are men in suits, they are
-	  either chimpanzees or they are gorillas.
+	\item Unless those creatures are men in suits, they
+          are either chimpanzees or they are gorillas.
 
 	$M \vee (C \vee G)$
 \end{enumerate}
 
-\noindent \textbf{Part B} Using the symbolization key given, translate each English-language sentence into SL.
-
+\noindent \textbf{Part B} Using the symbolization key given,
+translate each English-language sentence into SL.
 \begin{enumerate}
 	\item[\textbf{A:}] Mister Ace was murdered.
 	\item[\textbf{B:}] The butler did it.
 	\item[\textbf{C:}] The cook did it.
 	\item[\textbf{D:}] The Duchess is lying.
 	\item[\textbf{E:}] Mister Edge was murdered.
-	\item[\textbf{F:}] The murder weapon was a frying pan.
+	\item[\textbf{F:}] The murder weapon was a frying
+          pan.
 	
 	\item Either Mister Ace or Mister Edge was murdered.
 
 	$A \vee E$
 
-	\item If Mister Ace was murdered, then the cook did it.
+	\item If Mister Ace was murdered, then the cook did
+          it.
 
 	$A \rightarrow C$
 
-	\item If Mister Edge was murdered, then the cook did not do it.
+	\item If Mister Edge was murdered, then the cook did
+          not do it.
 
 	$E \rightarrow \neg C$
 
-	\item Either the butler did it, or the Duchess is lying.
+	\item Either the butler did it, or the Duchess is
+          lying.
 
 	$B \vee D$
 
@@ -202,23 +209,29 @@ possible, explain why.
 
 	$C \rightarrow D$
 
-	\item If the murder weapon was a frying pan, then the culprit must have been the cook.
+	\item If the murder weapon was a frying pan, then
+          the culprit must have been the cook.
 
 	$F \rightarrow C$
 
-	\item If the murder weapon was not a frying pan, then the culprit was either the cook or the butler.
+	\item If the murder weapon was not a frying pan,
+          then the culprit was either the cook or the
+          butler.
 
 	$\neg F \rightarrow (C \vee B)$
 
-	\item Mister Ace was murdered if and only if Mister Edge was not murdered.
+	\item Mister Ace was murdered if and only if Mister
+          Edge was not murdered.
 
 	$A \leftrightarrow \neg E$
 
-	\item The Duchess is lying, unless it was Mister Edge who was murdered.
+	\item The Duchess is lying, unless it was Mister
+          Edge who was murdered.
 
 	$D \vee E$
 
-	\item If Mister Ace was murdered, he was done in with a frying pan.
+	\item If Mister Ace was murdered, he was done in
+          with a frying pan.
 
 	$A \rightarrow F$
 
@@ -231,25 +244,29 @@ possible, explain why.
 	$D$
 \end{enumerate}
 
-\noindent \textbf{Part C} Using the symbolization key given, translate each English-language sentence into SL.
-
+\noindent \textbf{Part C} Using the symbolization key given,
+translate each English-language sentence into SL.
 \begin{enumerate}
 	\item[\textbf{E$_1$:}] Ava is an electrician.
 	\item[\textbf{E$_2$:}] Harrison is an electrician.
 	\item[\textbf{F$_1$:}] Ava is a firefighter.
 	\item[\textbf{F$_2$:}] Harrison is a firefighter.
-	\item[\textbf{S$_1$:}] Ava is satisfied with her career.
-	\item[\textbf{S$_2$:}] Harrison is satisfied with his career.
+	\item[\textbf{S$_1$:}] Ava is satisfied with her
+          career.
+	\item[\textbf{S$_2$:}] Harrison is satisfied with
+          his career.
 	
 	\item Ava and Harrison are both electricians.
 
 	$E_1 \wedge E_2$
 
-	\item If Ava is a firefighter, then she is satisfied with her career.
+	\item If Ava is a firefighter, then she is satisfied
+          with her career.
 
 	$F_1 \rightarrow S_1$
 
-	\item Ava is a firefighter, unless she is an electrician.
+	\item Ava is a firefighter, unless she is an
+          electrician.
 
 	$F_1 \vee E_1$
 
@@ -261,60 +278,75 @@ possible, explain why.
 
 	$\neg (E_1 \vee E_2)$
 
-	\item Both Ava and Harrison are electricians, but neither of them find it satisfying.
+	\item Both Ava and Harrison are electricians, but
+          neither of them find it satisfying.
 
 	$E_1 \wedge \neg S_1 \wedge E_2 \wedge \neg S_2$
 
-	\item Harrison is satisfied only if he is a firefighter.
+	\item Harrison is satisfied only if he is a
+          firefighter.
 
 	$S_2 \rightarrow F_2$
 
-	\item If Ava is not an electrician, then neither is Harrison, but if she is, then he is too.
+	\item If Ava is not an electrician, then neither is
+          Harrison, but if she is, then he is too.
 
 	$E_1 \leftrightarrow E_2$
 
-	\item Ava is satisfied with her career if and only if Harrison is not satisfied with his.
+	\item Ava is satisfied with her career if and only
+          if Harrison is not satisfied with his.
 
 	$S_1 \leftrightarrow \neg S_2$
 
-	\item If Harrison is both an electrician and a firefighter, then he must be satisfied with his work.
+	\item If Harrison is both an electrician and a
+          firefighter, then he must be satisfied with his
+          work.
 
 	$(E_2 \wedge F_2) \rightarrow S_2$
 
-	\item It cannot be that Harrison is both an electrician and a firefighter.
+	\item It cannot be that Harrison is both an
+          electrician and a firefighter.
 
 	$\neg (E_2 \wedge F_2)$
 
-	\item Harrison and Ava are both firefighters if and only if neither of them is an electrician.
+	\item Harrison and Ava are both firefighters if and
+          only if neither of them is an electrician.
 
-	$(F_2 \wedge F_1) \leftrightarrow (\neg E_2 \wedge \neg E_1)$
+	$(F_2 \wedge F_1) \leftrightarrow (\neg E_2 \wedge
+          \neg E_1)$
 \end{enumerate}
 
-\noindent \textbf{Part D} Give a symbolization key and symbolize the following sentences in SL.
-
+\noindent \textbf{Part D} Give a symbolization key and
+symbolize the following sentences in SL.
 \begin{enumerate}
 	\item[\textbf{A:}] Alice is a spy.
 	\item[\textbf{B:}] Bob is a spy.
 	\item[\textbf{C:}] The code has been broken.
-	\item[\textbf{G:}] The German embassy will be in an uproar.
+	\item[\textbf{G:}] The German embassy will be in an
+          uproar.
 
 	\item Alice and Bob are both spies.
 
 	$A \wedge B$
 
-	\item If either Alice or Bob is a spy, then the code has been broken.
+	\item If either Alice or Bob is a spy, then the code
+          has been broken.
 
 	$(A \vee B) \rightarrow C$
 
-	\item If neither Alice nor Bob is a spy, then the code remains unbroken.
+	\item If neither Alice nor Bob is a spy, then the
+          code remains unbroken.
 
 	$\neg (A \vee B) \rightarrow \neg C$
 
-	\item The German embassy will be in an uproar, unless someone has broken the code.
+	\item The German embassy will be in an uproar,
+          unless someone has broken the code.
 
 	$G \vee C$
 
-	\item Either the code has been broken or it has not, but the German embassy will be in an uproar regardless.
+	\item Either the code has been broken or it has not,
+          but the German embassy will be in an uproar
+          regardless.
 
 	$(C \vee \neg C) \wedge G$
 
@@ -323,15 +355,16 @@ possible, explain why.
 	$(A \vee B) \wedge \neg (A \wedge B)$
 \end{enumerate}
 
-\noindent \textbf{Part E} Give a symbolization key and symbolize the following sentences in SL.
-
+\noindent \textbf{Part E} Give a symbolization key and
+symbolize the following sentences in SL.
 \begin{enumerate}
 	\item[\textbf{G:}] Gregor plays first base.
 	\item[\textbf{L:}] The team will lose.
 	\item[\textbf{C:}] Gregor's mom will bake cookies.
 	\item[\textbf{M:}] There is a miracle.
 
-	\item If Gregor plays first base, then the team will lose.
+	\item If Gregor plays first base, then the team will
+          lose.
 
 	$G \rightarrow L$
 
@@ -339,17 +372,245 @@ possible, explain why.
 
 	$L \vee M$
 
-	\item The team will either lose or it won't, but Gregor will play first base regardless.
+	\item The team will either lose or it won't, but
+          Gregor will play first base regardless.
 
 	$(L \vee \neg L) \wedge G$
 
-	\item Gregor's mom will bake cookies if and only if Gregor plays first base.
+	\item Gregor's mom will bake cookies if and only if
+          Gregor plays first base.
 
 	$C \leftrightarrow G$
 
-	\item If there is a miracle, then Gregor's mom will not bake cookies.
+	\item If there is a miracle, then Gregor's mom will
+          not bake cookies.
 
 	$M \rightarrow \neg C$
+\end{enumerate}
+
+\noindent \textbf{Part F} For each argument, write a symbolization key and translate the argument as well as possible into SL.
+\begin{enumerate}
+	\item If Dorothy plays the piano in the morning, then Roger wakes up cranky. Dorothy plays piano in the morning unless she is distracted. So if Roger does not wake up cranky, then Dorothy must be distracted.
+
+	\item[\textbf{P:}] Dorothy plays piano in the morning.
+	\item[\textbf{R:}] Roger wakes up cranky.
+	\item[\textbf{D:}] Dorothy is distracted.
+
+    \begin{enumerate}
+        \item[] $P \rightarrow C$
+        \item[] $P \vee D$
+        \item[$\therefore$] $\neg C \rightarrow D$
+    \end{enumerate}
+
+	\item It will either rain or snow on Tuesday. If it rains, Neville will be sad. If it snows, Neville will be cold. Therefore, Neville will either be sad or cold on Tuesday.
+
+	\item[\textbf{R:}] It will rain on Tuesday.
+	\item[\textbf{S:}] It will snow on Tuesday.
+	\item[\textbf{N$_1$:}] Neville will be sad on Tuesday.
+	\item[\textbf{N$_2$:}] Neville will be cold on Tuesday.
+	
+    \begin{enumerate}
+        \item[] $R \vee S$
+        \item[] $R \rightarrow N_1$
+        \item[] $S \rightarrow N_2$
+        \item[$\therefore$] $N_1 \vee N_2$
+    \end{enumerate}
+
+	\item If Zoog remembered to do his chores, then things are clean but not neat. If he forgot, then things are neat but not clean. Therefore, things are either neat or clean--- but not both.
+
+	\item[\textbf{Z:}] Zoog remembered to do his chores.
+	\item[\textbf{C:}] Things are clean.
+	\item[\textbf{N}] Things are neat.
+	
+    \begin{enumerate}
+        \item[] $Z \rightarrow (C \wedge \neg N)$
+        \item[] $\neg Z \rightarrow (N \wedge \neg C)$
+        \item[$\therefore$] $(N \vee C) \wedge \neg (N \wedge C)$
+    \end{enumerate}
+\end{enumerate}
+
+\noindent \textbf{Part G} For each of the following: (a) Is it a wff of SL? (b) Is it a sentence of SL, allowing for notational conventions?
+\begin{enumerate}
+	\item (a) No. (b) No.
+	\item (a) No. (b) Yes.
+	\item (a) Yes. (b) Yes.
+	\item (a) No. (b) No.
+	\item (a) Yes. (b) Yes.
+	\item (a) No. (b) No.
+	\item (a) No. (b) Yes.
+	\item (a) No. (b) Yes.
+	\item (a) No. (b) No.
+\end{enumerate}
+
+\noindent \textbf{Part H}
+\begin{enumerate}
+	\item Are there any wffs of SL that contain no sentence letters? Why or why not?
+
+	No, since the base case of a wff is always a sentence letter.
+
+	\item In the chapter, we symbolized an \emph{exclusive or} using $\vee$, $\wedge$, and $\neg$. How could you translate an \emph{exclusive or} using only two connectives? Is there any way to translate an \emph{exclusive or} using only one connective?
+
+	3 connectives: $(A \vee B) \wedge \neg (A \wedge B)$
+
+	2 connectives: ?
+
+	1 connective: ?
+\end{enumerate}
+
+\section{Chapter 3 Practice Exercises}
+
+\noindent \textbf{Part A} Determine whether each sentence is a tautology, a contradiction, or a contingent sentence. Justify your answer with a complete or partial truth table where appropriate.
+\begin{enumerate}
+	\item $A \rightarrow A$ \textbf{(Tautology)}
+	
+	\begin{center}
+	\begin{tabular}{c|@{\TTon}*{3}{c}@{\TToff}}
+	$A$ & $A$ & $\rightarrow$ & $A$ \\
+	\hline
+	 1  &  1  &  \TTbf{1}     &  1 \\
+	 0  &  0  &  \TTbf{1}     &  0
+	\end{tabular}
+	\end{center}
+	
+	\item $\neg B \wedge B$ \textbf{(Contradiction)}
+	
+	\begin{center}
+	\begin{tabular}{c|@{\TTon}*{4}{c}@{\TToff}}
+	$B$ & $\neg$ & $B$ & $\wedge$  & $B$ \\
+	\hline
+	 1  &  0     &  1  &  \TTbf{0} &  1 \\
+	 0  &  1     &  0  &  \TTbf{0} &  0
+	\end{tabular}
+	\end{center}
+	
+	\item $C \rightarrow\neg C$ \textbf{(Contingent)}
+	
+	\begin{center}
+	\begin{tabular}{c|@{\TTon}*{4}{c}@{\TToff}}
+	$C$ & $C$ & $\rightarrow$ & $\neg$  & $C$ \\
+	\hline
+	 1  &  1  &  \TTbf{0}     &  0      &  1 \\
+	 0  &  0  &  \TTbf{1}     &  1      &  0
+	\end{tabular}
+	\end{center}
+	
+	\item $\neg D \vee D$ \textbf{(Tautology)}
+	
+	\begin{center}
+	\begin{tabular}{c|@{\TTon}*{4}{c}@{\TToff}}
+	$D$ & $\neg$ & $D$ & $\vee$    & $D$ \\
+	\hline
+	 1  &  0     &  1  &  \TTbf{1} &  1 \\
+	 0  &  1     &  0  &  \TTbf{1} &  0
+	\end{tabular}
+	\end{center}
+	
+	\item $(A \leftrightarrow B) \leftrightarrow \neg(A\leftrightarrow \neg B)$ \textbf{(Tautology)}
+	
+	\begin{center}
+	\begin{tabular}{c|c|@{\TTon}*{9}{c}@{\TToff}}
+	$A$ & $B$ & $(A$ & $\leftrightarrow$ & $B)$ & $\leftrightarrow$ & $\neg$ & $(A$ & $\leftrightarrow$ & $\neg$ & $B)$ \\
+	\hline
+	 1  &  1  &  1   &  1                &  1   &  \TTbf{1}         &  1     &  1   &  0                &  0     &  1 \\
+	 1  &  0  &  1   &  0                &  0   &  \TTbf{1}         &  0     &  1   &  1                &  1     &  0 \\
+	 0  &  1  &  0   &  0                &  1   &  \TTbf{1}         &  0     &  0   &  1                &  0     &  1 \\
+	 0  &  0  &  0   &  1                &  0   &  \TTbf{1}         &  1     &  0   &  0                &  1     &  0
+	\end{tabular}
+	\end{center}
+	
+	\item $(A\wedge B) \vee (B\wedge A)$
+	\item $(A \rightarrow B) \vee (B \rightarrow A)$
+	\item $\neg[A \rightarrow (B \rightarrow A)]$
+	\item $(A \wedge B) \rightarrow (B \vee A)$
+	\item $A \leftrightarrow [A \rightarrow (B \wedge \neg B)]$
+	\item $\neg(A \vee B) \leftrightarrow (\neg A \wedge \neg B)$
+	\item $\neg(A\wedge B) \leftrightarrow A$
+	\item $\bigl[(A\wedge B) \wedge\neg(A\wedge B)\bigr] \wedge C$
+	\item $A\rightarrow(B\vee C)$
+	\item $[(A \wedge B) \wedge C] \rightarrow B$
+	\item $(A \wedge\neg A) \rightarrow (B \vee C)$
+	\item $\neg\bigl[(C\vee A) \vee B\bigr]$
+	\item $(B\wedge D) \leftrightarrow [A \leftrightarrow(A \vee C)]$
+\end{enumerate}
+
+\noindent \textbf{Part B} Determine whether each pair of sentences is logically equivalent. Justify your answer with a complete or partial truth table where appropriate.
+\begin{enumerate}
+	\item $A$, $\neg A$
+	\item $A$, $A \vee A$
+	\item $A\rightarrow A$, $A \leftrightarrow A$
+	\item $A \vee \neg B$, $A\rightarrow B$
+	\item $A \wedge \neg A$, $\neg B \leftrightarrow B$
+	\item $\neg(A \wedge B)$, $\neg A \vee \neg B$
+	\item $\neg(A \rightarrow B)$, $\neg A \rightarrow \neg B$
+	\item $(A \rightarrow B)$, $(\neg B \rightarrow \neg A)$
+	\item $[(A \vee B) \vee C]$, $[A \vee (B \vee C)]$
+	\item $[(A \vee B) \wedge C]$, $[A \vee (B \wedge C)]$
+\end{enumerate}
+
+\noindent \textbf{Part E} Answer each of the questions below and justify your answer.
+\begin{enumerate}
+	\item Suppose that $\mathcal{A}$ and $\mathcal{B}$ are logically equivalent. What can you say about $\mathcal{A}\leftrightarrow\mathcal{B}$?
+
+	$\mathcal{A}\leftrightarrow\mathcal{B}$ is a tautology.
+	Every line of the complete truth table will be true since
+	$\leftrightarrow$ evaluates to true when its arguments have
+	the same truth value.
+
+	\item Suppose that $(\mathcal{A}\wedge\mathcal{B})\rightarrow\mathcal{C}$ is contingent. What can you say about the argument ``$\mathcal{A}, \mathcal{B}, \therefore\mathcal{C}$''?
+
+	The argument is invalid. Since
+    $(\mathcal{A}\wedge\mathcal{B})\rightarrow\mathcal{C}$
+    is contingent, there is some line where
+    $(\mathcal{A}\wedge\mathcal{B})$ is true but
+    $\mathcal{C}$ is false. This means there is some
+    line where the premises $\mathcal{A}$ and
+    $\mathcal{B}$ are true, and the conclusion
+    $\mathcal{C}$ is false. Therefore, the argument is
+    invalid.
+
+	\item Suppose that $\{\mathcal{A},\mathcal{B}, \mathcal{C}\}$ is inconsistent. What can you say about $(\mathcal{A}\wedge\mathcal{B}\wedge\mathcal{C})$?
+
+	$(\mathcal{A}\wedge\mathcal{B}\wedge\mathcal{C})$ is
+	a contradiction. Since the set $\{\mathcal{A},\mathcal{B},
+	\mathcal{C}\}$ is inconsistent, there is no line of a
+	complete truth table where all of $\mathcal{A}$,
+	$\mathcal{B}$, $\mathcal{C}$ are true. This means that
+	$(\mathcal{A}\wedge\mathcal{B}\wedge\mathcal{C})$ will be 
+	false on every line, or in other words, a contradiction.
+
+	\item Suppose that $\mathcal{A}$ is a contradiction. What can you say about the argument ``$\mathcal{A}, \mathcal{B}, \therefore\mathcal{C}$''?
+
+	The argument is valid. There cannot be a line where
+	both premises $\mathcal{A}$ and $\mathcal{B}$ are true, yet
+	$\mathcal{C}$ is false, which is required for an invalid
+	argument. This is because $\mathcal{A}$ is a contradiction
+	and not true on any line.
+
+	\item Suppose that $\mathcal{C}$ is a tautology. What can you say about the argument ``$\mathcal{A}, \mathcal{B}, \therefore\mathcal{C}$''?
+
+	The argument is valid. There cannot be a line where
+	both premises $\mathcal{A}$ and $\mathcal{B}$ are true, yet
+	$\mathcal{C}$ is false, which is required for an invalid
+	argument. This is because $\mathcal{C}$ is a tautology
+	and true on every line.
+
+	\item Suppose that $\mathcal{A}$ and $\mathcal{B}$ are logically equivalent. What can you say about $(\mathcal{A}\vee\mathcal{B})$?
+
+	Not much. $\mathcal{A}$ and $\mathcal{B}$ are
+	either both true or both false on some line, so
+	$(\mathcal{A}\vee\mathcal{B})$ could either be
+	true or false on that line as well.
+	$(\mathcal{A}\vee\mathcal{B})$ could be
+	a tautology, a contradiction, or contingent.
+
+	\item Suppose that $\mathcal{A}$ and $\mathcal{B}$ are \emph{not} logically equivalent. What can you say about $(\mathcal{A}\vee\mathcal{B})$?
+
+	$(\mathcal{A}\vee\mathcal{B})$ cannot be a contradiction, i.e.
+	it is either a tautology or contingent. Since $\mathcal{A}$
+	is not logically equivalent to $\mathcal{B}$, there must be
+	some line where $\mathcal{A}$ differs in truth value from
+	$\mathcal{B}$, which means $(\mathcal{A}\vee\mathcal{B})$
+	must be true on some line.
 \end{enumerate}
 
 \end{document}

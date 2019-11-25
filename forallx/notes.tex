@@ -1,5 +1,9 @@
 \documentclass[12pt, letterpaper, twoside]{article}
 \usepackage{amssymb} \usepackage[utf8]{inputenc}
+
+\newcommand*{\TTon}{\hspace{1.5em}\extracolsep{-1em}}
+\newcommand*{\TToff}{\extracolsep{-1em}\hspace{.3em}}
+\newcommand*{\TTbf}[1]{\textbf{\large #1}}
  
 \title{forall x notes} \author{Thomas Vu} \date{\today}
 
@@ -76,9 +80,9 @@ possible, explain why.
 
     This is possible. For example:
     \begin{enumerate}
-        \item[] All men are carrots.
-        \item[$\therefore$] It is both raining and not
-          raining.
+        \item[] It is both raining and not raining.
+        \item[$\therefore$] It is both snowing and not
+          snowing.
     \end{enumerate}
 
     \item An invalid argument, the conclusion of which is a
@@ -97,7 +101,8 @@ possible, explain why.
       are tautologies
 
     This is possible. In fact, any two tautologies will
-    always be logically equivalent as they are always true.
+    always be logically equivalent as they are both always
+    true.
 
     \item Two logically equivalent sentences, one of which
       is a tautology and one of which is contingent
@@ -383,11 +388,18 @@ symbolize the following sentences in SL.
 	$M \rightarrow \neg C$
 \end{enumerate}
 
-\noindent \textbf{Part F} For each argument, write a symbolization key and translate the argument as well as possible into SL.
+\noindent \textbf{Part F} For each argument, write a
+symbolization key and translate the argument as well as
+possible into SL.
 \begin{enumerate}
-	\item If Dorothy plays the piano in the morning, then Roger wakes up cranky. Dorothy plays piano in the morning unless she is distracted. So if Roger does not wake up cranky, then Dorothy must be distracted.
+	\item If Dorothy plays the piano in the morning,
+          then Roger wakes up cranky. Dorothy plays piano in
+          the morning unless she is distracted. So if Roger
+          does not wake up cranky, then Dorothy must be
+          distracted.
 
-	\item[\textbf{P:}] Dorothy plays piano in the morning.
+	\item[\textbf{P:}] Dorothy plays piano in the
+          morning.
 	\item[\textbf{R:}] Roger wakes up cranky.
 	\item[\textbf{D:}] Dorothy is distracted.
 
@@ -397,12 +409,17 @@ symbolize the following sentences in SL.
         \item[$\therefore$] $\neg C \rightarrow D$
     \end{enumerate}
 
-	\item It will either rain or snow on Tuesday. If it rains, Neville will be sad. If it snows, Neville will be cold. Therefore, Neville will either be sad or cold on Tuesday.
+	\item It will either rain or snow on Tuesday. If it
+          rains, Neville will be sad. If it snows, Neville
+          will be cold. Therefore, Neville will either be
+          sad or cold on Tuesday.
 
 	\item[\textbf{R:}] It will rain on Tuesday.
 	\item[\textbf{S:}] It will snow on Tuesday.
-	\item[\textbf{N$_1$:}] Neville will be sad on Tuesday.
-	\item[\textbf{N$_2$:}] Neville will be cold on Tuesday.
+	\item[\textbf{N$_1$:}] Neville will be sad on
+          Tuesday.
+	\item[\textbf{N$_2$:}] Neville will be cold on
+          Tuesday.
 	
     \begin{enumerate}
         \item[] $R \vee S$
@@ -411,7 +428,10 @@ symbolize the following sentences in SL.
         \item[$\therefore$] $N_1 \vee N_2$
     \end{enumerate}
 
-	\item If Zoog remembered to do his chores, then things are clean but not neat. If he forgot, then things are neat but not clean. Therefore, things are either neat or clean--- but not both.
+	\item If Zoog remembered to do his chores, then
+          things are clean but not neat. If he forgot, then
+          things are neat but not clean. Therefore, things
+          are either neat or clean--- but not both.
 
 	\item[\textbf{Z:}] Zoog remembered to do his chores.
 	\item[\textbf{C:}] Things are clean.
@@ -420,11 +440,14 @@ symbolize the following sentences in SL.
     \begin{enumerate}
         \item[] $Z \rightarrow (C \wedge \neg N)$
         \item[] $\neg Z \rightarrow (N \wedge \neg C)$
-        \item[$\therefore$] $(N \vee C) \wedge \neg (N \wedge C)$
+        \item[$\therefore$] $(N \vee C) \wedge \neg (N
+          \wedge C)$
     \end{enumerate}
 \end{enumerate}
 
-\noindent \textbf{Part G} For each of the following: (a) Is it a wff of SL? (b) Is it a sentence of SL, allowing for notational conventions?
+\noindent \textbf{Part G} For each of the following: (a) Is
+it a wff of SL? (b) Is it a sentence of SL, allowing for
+notational conventions?
 \begin{enumerate}
 	\item (a) No. (b) No.
 	\item (a) No. (b) Yes.
@@ -439,11 +462,18 @@ symbolize the following sentences in SL.
 
 \noindent \textbf{Part H}
 \begin{enumerate}
-	\item Are there any wffs of SL that contain no sentence letters? Why or why not?
+	\item Are there any wffs of SL that contain no
+          sentence letters? Why or why not?
 
-	No, since the base case of a wff is always a sentence letter.
+	No, since the base case of a wff is always a
+        sentence letter.
 
-	\item In the chapter, we symbolized an \emph{exclusive or} using $\vee$, $\wedge$, and $\neg$. How could you translate an \emph{exclusive or} using only two connectives? Is there any way to translate an \emph{exclusive or} using only one connective?
+	\item In the chapter, we symbolized an
+          \emph{exclusive or} using $\vee$, $\wedge$, and
+          $\neg$. How could you translate an \emph{exclusive
+            or} using only two connectives? Is there any way
+          to translate an \emph{exclusive or} using only one
+          connective?
 
 	3 connectives: $(A \vee B) \wedge \neg (A \wedge B)$
 
@@ -453,5 +483,192 @@ symbolize the following sentences in SL.
 \end{enumerate}
 
 \section{Chapter 3 Practice Exercises}
+
+\noindent \textbf{Part A} Determine whether each sentence is
+a tautology, a contradiction, or a contingent
+sentence. Justify your answer with a complete or partial
+truth table where appropriate.
+\begin{enumerate}
+	\item $A \rightarrow A$ \textbf{(Tautology)}
+	
+	\begin{center}
+	\begin{tabular}{c|@{\TTon}*{3}{c}@{\TToff}}
+	$A$ & $A$ & $\rightarrow$ & $A$ \\ \hline 1 & 1 &
+          \TTbf{1} & 1 \\ 0 & 0 & \TTbf{1} & 0
+	\end{tabular}
+	\end{center}
+	
+	\item $\neg B \wedge B$ \textbf{(Contradiction)}
+	
+	\begin{center}
+	\begin{tabular}{c|@{\TTon}*{4}{c}@{\TToff}}
+	$B$ & $\neg$ & $B$ & $\wedge$ & $B$ \\ \hline 1 & 0
+          & 1 & \TTbf{0} & 1 \\ 0 & 1 & 0 & \TTbf{0} & 0
+	\end{tabular}
+	\end{center}
+	
+	\item $C \rightarrow\neg C$ \textbf{(Contingent)}
+	
+	\begin{center}
+	\begin{tabular}{c|@{\TTon}*{4}{c}@{\TToff}}
+	$C$ & $C$ & $\rightarrow$ & $\neg$ & $C$ \\ \hline 1
+          & 1 & \TTbf{0} & 0 & 1 \\ 0 & 0 & \TTbf{1} & 1 & 0
+	\end{tabular}
+	\end{center}
+	
+	\item $\neg D \vee D$ \textbf{(Tautology)}
+	
+	\begin{center}
+	\begin{tabular}{c|@{\TTon}*{4}{c}@{\TToff}}
+	$D$ & $\neg$ & $D$ & $\vee$ & $D$ \\ \hline 1 & 0 &
+          1 & \TTbf{1} & 1 \\ 0 & 1 & 0 & \TTbf{1} & 0
+	\end{tabular}
+	\end{center}
+	
+	\item $(A \leftrightarrow B) \leftrightarrow
+          \neg(A\leftrightarrow \neg B)$
+          \textbf{(Tautology)}
+	
+	\begin{center}
+	\begin{tabular}{c|c|@{\TTon}*{9}{c}@{\TToff}}
+	$A$ & $B$ & $(A$ & $\leftrightarrow$ & $B)$ &
+          $\leftrightarrow$ & $\neg$ & $(A$ &
+          $\leftrightarrow$ & $\neg$ & $B)$ \\ \hline 1 & 1
+          & 1 & 1 & 1 & \TTbf{1} & 1 & 1 & 0 & 0 & 1 \\ 1 &
+          0 & 1 & 0 & 0 & \TTbf{1} & 0 & 1 & 1 & 1 & 0 \\ 0
+          & 1 & 0 & 0 & 1 & \TTbf{1} & 0 & 0 & 1 & 0 & 1
+          \\ 0 & 0 & 0 & 1 & 0 & \TTbf{1} & 1 & 0 & 0 & 1 &
+          0
+	\end{tabular}
+	\end{center}
+	
+	\item $(A\wedge B) \vee (B\wedge A)$
+	\item $(A \rightarrow B) \vee (B \rightarrow A)$
+	\item $\neg[A \rightarrow (B \rightarrow A)]$
+	\item $(A \wedge B) \rightarrow (B \vee A)$
+	\item $A \leftrightarrow [A \rightarrow (B \wedge
+          \neg B)]$
+	\item $\neg(A \vee B) \leftrightarrow (\neg A \wedge
+          \neg B)$
+	\item $\neg(A\wedge B) \leftrightarrow A$
+	\item $\bigl[(A\wedge B) \wedge\neg(A\wedge B)\bigr]
+          \wedge C$
+	\item $A\rightarrow(B\vee C)$
+	\item $[(A \wedge B) \wedge C] \rightarrow B$
+	\item $(A \wedge\neg A) \rightarrow (B \vee C)$
+	\item $\neg\bigl[(C\vee A) \vee B\bigr]$
+	\item $(B\wedge D) \leftrightarrow [A
+          \leftrightarrow(A \vee C)]$
+\end{enumerate}
+
+\noindent \textbf{Part B} Determine whether each pair of
+sentences is logically equivalent. Justify your answer with
+a complete or partial truth table where appropriate.
+\begin{enumerate}
+	\item $A$, $\neg A$
+	\item $A$, $A \vee A$
+	\item $A\rightarrow A$, $A \leftrightarrow A$
+	\item $A \vee \neg B$, $A\rightarrow B$
+	\item $A \wedge \neg A$, $\neg B \leftrightarrow B$
+	\item $\neg(A \wedge B)$, $\neg A \vee \neg B$
+	\item $\neg(A \rightarrow B)$, $\neg A \rightarrow
+          \neg B$
+	\item $(A \rightarrow B)$, $(\neg B \rightarrow \neg
+          A)$
+	\item $[(A \vee B) \vee C]$, $[A \vee (B \vee C)]$
+	\item $[(A \vee B) \wedge C]$, $[A \vee (B \wedge
+          C)]$
+\end{enumerate}
+
+\noindent \textbf{Part E} Answer each of the questions below
+and justify your answer.
+\begin{enumerate}
+	\item Suppose that $\mathcal{A}$ and $\mathcal{B}$
+          are logically equivalent. What can you say about
+          $\mathcal{A}\leftrightarrow\mathcal{B}$?
+
+	$\mathcal{A}\leftrightarrow\mathcal{B}$ is a
+          tautology.  Every line of the complete truth table
+          will be true since $\leftrightarrow$ evaluates to
+          true when its arguments have the same truth value.
+
+	\item Suppose that
+          $(\mathcal{A}\wedge\mathcal{B})\rightarrow\mathcal{C}$
+          is contingent. What can you say about the argument
+          ``$\mathcal{A}, \mathcal{B},
+          \therefore\mathcal{C}$''?
+
+	The argument is invalid. Since
+        $(\mathcal{A}\wedge\mathcal{B})\rightarrow\mathcal{C}$
+        is contingent, there is some line where
+        $(\mathcal{A}\wedge\mathcal{B})$ is true but
+        $\mathcal{C}$ is false. This means there is some
+        line where the premises $\mathcal{A}$ and
+        $\mathcal{B}$ are true, and the conclusion
+        $\mathcal{C}$ is false. Therefore, the argument is
+        invalid.
+
+	\item Suppose that $\{\mathcal{A},\mathcal{B},
+          \mathcal{C}\}$ is inconsistent. What can you say
+          about
+          $(\mathcal{A}\wedge\mathcal{B}\wedge\mathcal{C})$?
+
+	$(\mathcal{A}\wedge\mathcal{B}\wedge\mathcal{C})$ is
+          a contradiction. Since the set
+          $\{\mathcal{A},\mathcal{B}, \mathcal{C}\}$ is
+          inconsistent, there is no line of a complete truth
+          table where all of $\mathcal{A}$, $\mathcal{B}$,
+          $\mathcal{C}$ are true. This means that
+          $(\mathcal{A}\wedge\mathcal{B}\wedge\mathcal{C})$
+          will be false on every line, or in other words, a
+          contradiction.
+
+	\item Suppose that $\mathcal{A}$ is a
+          contradiction. What can you say about the argument
+          ``$\mathcal{A}, \mathcal{B},
+          \therefore\mathcal{C}$''?
+
+	The argument is valid. There cannot be a line where
+        both premises $\mathcal{A}$ and $\mathcal{B}$ are
+        true, yet $\mathcal{C}$ is false, which is required
+        for an invalid argument. This is because
+        $\mathcal{A}$ is a contradiction and not true on any
+        line.
+
+	\item Suppose that $\mathcal{C}$ is a
+          tautology. What can you say about the argument
+          ``$\mathcal{A}, \mathcal{B},
+          \therefore\mathcal{C}$''?
+
+	The argument is valid. There cannot be a line where
+        both premises $\mathcal{A}$ and $\mathcal{B}$ are
+        true, yet $\mathcal{C}$ is false, which is required
+        for an invalid argument. This is because
+        $\mathcal{C}$ is a tautology and true on every line.
+
+	\item Suppose that $\mathcal{A}$ and $\mathcal{B}$
+          are logically equivalent. What can you say about
+          $(\mathcal{A}\vee\mathcal{B})$?
+
+	Not much. $\mathcal{A}$ and $\mathcal{B}$ are either
+        both true or both false on some line, so
+        $(\mathcal{A}\vee\mathcal{B})$ could either be true
+        or false on that line as well.
+        $(\mathcal{A}\vee\mathcal{B})$ could be a tautology,
+        a contradiction, or contingent.
+
+	\item Suppose that $\mathcal{A}$ and $\mathcal{B}$
+          are \emph{not} logically equivalent. What can you
+          say about $(\mathcal{A}\vee\mathcal{B})$?
+
+	$(\mathcal{A}\vee\mathcal{B})$ cannot be a
+          contradiction, i.e.  it is either a tautology or
+          contingent. Since $\mathcal{A}$ is not logically
+          equivalent to $\mathcal{B}$, there must be some
+          line where $\mathcal{A}$ differs in truth value
+          from $\mathcal{B}$, which means
+          $(\mathcal{A}\vee\mathcal{B})$ must be true on
+          some line.
+\end{enumerate}
 
 \end{document}
