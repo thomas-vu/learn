@@ -1,0 +1,17 @@
+============================================================
+ssh leviathan0@leviathan.labs.overthewire.org -p 2223
+leviathan0
+------------------------------------------------------------
+grep password .backup/bookmarks.html
+============================================================
+ssh leviathan1@leviathan.labs.overthewire.org -p 2223
+rioGegei8m
+------------------------------------------------------------
+ltrace ./check
+sex
+whoami
+cat /etc/leviathan_pass/leviathan2
+============================================================
+ssh leviathan2@leviathan.labs.overthewire.org -p 2223
+ougahZi8Ta
+------------------------------------------------------------

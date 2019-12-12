@@ -1,0 +1,76 @@
+ls -l (long format) -a (show all files)
+
+The Long Format
+     If the -l option is given, the following information is displayed for each file: file mode,
+     number of links, owner name, group name, number of bytes in the file, abbreviated month,
+     day-of-month file was last modified, hour file last modified, minute file last modified, and
+     the pathname.  In addition, for each directory whose contents are displayed, the total num-
+     ber of 512-byte blocks used by the files in the directory is displayed on a line by itself,
+     immediately before the information for the files in the directory.  If the file or directory
+     has extended attributes, the permissions field printed by the -l option is followed by a '@'
+     character.  Otherwise, if the file or directory has extended security information (such as
+     an access control list), the permissions field printed by the -l option is followed by a '+'
+     character.
+
+     If the modification time of the file is more than 6 months in the past or future, then the
+     year of the last modification is displayed in place of the hour and minute fields.
+
+     If the owner or group names are not a known user or group name, or the -n option is given,
+     the numeric ID's are displayed.
+
+cd
+rm -r (recursive) -f (force no confirmation prompts)
+mv
+cp
+mkdir
+rmdir
+cat -n (number lines)
+echo $HOME and "$HOME", or hello world and "hello world" are the same but '$HOME' is a literal
+diff
+touch
+grep -c (count matches) -i (case insensitive) -n (number lines) pattern [file ...]
+pwd
+ssh
+man
+sudo
+alias
+chmod
+file = display type of file
+find / -user bandit7 -group bandit6 -size 33c 2> /dev/null = search filesystem
+type = display type of command
+which = display location of command
+whoami = display username
+head
+more
+less
+bg
+fg
+jobs
+ps
+sort file
+uniq -u (only print lines that weren't repeated) file
+wc
+awk
+sed
+ed
+strings
+gunzip
+hexdump
+xxd = something to do with hexdumping
+base64
+-----------------internet---------------------
+curl
+traceroute
+nc localhost 30000
+nslookup facebook.com
+hostname
+----------------------------------------------
+> OR 1> = redirect stdout to file
+2> /dev/null = redirect stderr to null
+>> = append to file
+
+vi
+emacs
+
+bash for loop:
+for line in $(sort data.txt | uniq); do echo $line; done
